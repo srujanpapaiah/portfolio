@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  /* background-image: url(); */
+  height: 100vh;
+  color: rgb(243, 181, 35);
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+  background: #000000; /* fallback for old browsers */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/maxyne-barcel.png"); /* Chrome 10-25, Safari 5.1-6 */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 100px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  font-family: sans-serif;
+}
+
+/* .hero {
+  margin: 100px 200px;
+  font-weight: bold;
+} */
+
+.one {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 100px;
+  text-align: center;
+  padding: 0 80px;
+  font-family: "Dela Gothic One";
+  line-height: 1.2;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+}
+
+.button-large {
+  background-color: rgb(238, 72, 35);
+  color: #fff;
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 25px 50px;
+  border: none;
+}
+
+.button-small {
+  background-color: rgb(238, 72, 35);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 35px;
+  border: none;
+}
+
+.bottom {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
