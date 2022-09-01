@@ -1,123 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-}
-
-body{
-    background: linear-gradient(90deg, #d3d3d3, #2d3436);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    margin: 0 20px;
-    font-family: 'Roboto';
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    height: 20vh;
-}
-
-.logo{
-    flex: 1;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-logo {
-    color: #0D0D0D;
-    font-size: 2.0rem;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    display: block;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: system-ui;
 }
 
-.nav-anchors{
-    text-decoration: none;
-    color: #f1f1f1;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
 }
 
-nav .nav-menu-icon {
-    display: none;
-}
-
-nav .nav-links {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-button {
-    background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
-    border-radius: 15px;
-    border: none;
-    padding: 5px 40px;
-    cursor: pointer;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    height: 80vh;
-}
-
-.col{
-    display: flex;
-    flex: 0.5;
-    min-height: 100%;
-}
-
-.col-2{
-    overflow: hidden;
-}
-
-.personal-img{
-    position: absolute;
-    bottom: 120px;
-    right: 120px;
-    height: 50%;
-    border-radius: 50%;
-}
-
-.col-1{
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2.5rem;
-    align-items: flex-start;
-    color: #fff;
-}
-
-.name-decoration{
-    color: #fe6b8b;
-}
-
-@media screen and (max-width: 1230px){
-    .personal-img {
-        height:30%;
-        bottom: 200px;
-    }
-
-    nav .nav-links{
-        display: none;
-    }
-    nav .nav-menu-icon {
-        display: block;
-        margin: auto;
-        
-    }
-    .col-1{
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .personal-img {
-        display: none;
-    }
+.container {
+  display: flex;
+  height: 80vh;
 }
