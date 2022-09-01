@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
 }
 
 nav {
@@ -15,7 +20,7 @@ nav {
 .nav-logo {
   margin-left: 20px;
   text-decoration: none;
-  font-family: system-ui;
+  font-size: 30px;
 }
 
 .nav-links {
@@ -24,7 +29,46 @@ nav {
   gap: 50px;
 }
 
+.nav-anchors {
+  text-decoration: none;
+}
+
+.nav-button {
+  margin-right: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   height: 80vh;
+}
+
+.col {
+  position: relative;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 1;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.srujan-img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
 }
