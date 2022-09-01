@@ -33,6 +33,13 @@ nav {
   text-decoration: none;
 }
 
+.w-6.h-6 {
+  position: absolute;
+  height: 25px;
+  right: 140px;
+  cursor: pointer;
+}
+
 .nav-button {
   margin-right: 30px;
   padding: 10px 20px;
