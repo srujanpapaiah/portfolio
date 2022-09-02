@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Allerta", sans-serif;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#navbarMonstera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 50px;
+}
+
+#navFirst {
+  cursor: pointer;
+}
+#navMid {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+#underline {
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+#navEnd {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+#midWhole {
+  display: flex;
+}
+
+#midWholePart1 {
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+#monstera {
+  font-size: 130px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #5c940d;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 32px;
+  color: #fff;
+  margin: 50px 0;
+  cursor: pointer;
+}
+
+button h1 {
+  display: inline-block;
+}
+#midWholePart121 button {
+  display: flex;
+  align-items: center;
+}
+#midWholePart13 {
+  display: flex;
+  margin-top: 100px;
+  width: 900px;
+  gap: 40px;
+}
+.midWholePart13Parts {
+  display: flex;
+  gap: 10px;
+}
+#imgMain {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 500px;
+  height: 600px;
+}
