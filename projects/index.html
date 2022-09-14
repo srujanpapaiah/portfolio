@@ -12,14 +12,13 @@
         box-sizing: border-box;
       }
       .container {
-        display: flex;
-        justify-content: space-around;
-        gap: 8px;
-        margin: 32px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin: 32px 32px;
       }
       .container div {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        padding: 0 0;
         border-radius: 10px;
         cursor: pointer;
       }
@@ -28,10 +27,22 @@
         justify-content: center;
         margin: 12px 0;
         font-size: 24px;
+        text-decoration: none;
       }
       img {
-        max-width: 300px;
+        max-width: 100%;
+        height: 250px;
         border-radius: 10px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      }
+      a:visited,
+      a:link {
+        text-decoration: none;
+        color: #555;
+      }
+      a:hover,
+      a:active {
+        color: #000;
       }
     </style>
   </head>
@@ -39,16 +50,28 @@
     <nav></nav>
     <div class="container">
       <div>
-        <img src="../assets/programming.jpeg" alt="" />
-        <h1>Project 1</h1>
+        <a href="https://srujanpapaiahgari.com/projects/project_1">
+          <img src="../assets/project_1.png" alt="" />
+          <h1>Project 1</h1>
+        </a>
       </div>
       <div>
-        <img src="../assets/programming.jpeg" alt="" />
-        <h1>Project 2</h1>
+        <a href="https://srujanpapaiahgari.com/projects/project_2">
+          <img src="../assets/project_2.png" alt="" />
+          <h1>Project 2</h1>
+        </a>
       </div>
       <div>
-        <img src="../assets/programming.jpeg" alt="" />
-        <h1>Project 3</h1>
+        <a href="https://srujanpapaiahgari.com/projects/project_3">
+          <img src="../assets/project_3.png" alt="" />
+          <h1>Project 3</h1>
+        </a>
+      </div>
+      <div>
+        <a href="https://srujanpapaiahgari.com/projects/project_4">
+          <img src="../assets/project_4.png" alt="" />
+          <h1>Project 4</h1>
+        </a>
       </div>
     </div>
   </body>
