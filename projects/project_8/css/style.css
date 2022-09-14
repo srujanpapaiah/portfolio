@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 92px;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 48px;
+  font-size: 18px;
+}
+
+.signin-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    rgb(217, 55, 246),
+    rgb(232, 123, 199)
+  );
+  color: #fff;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.learn-more-btn {
+  padding: 20px 44px;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    rgb(217, 55, 246),
+    rgb(236, 178, 218)
+  );
+  color: #fff;
+  font-size: 30px;
+}
+
+.intro-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 60%;
+  z-index: -10;
+}
+
+.main-img {
+  max-width: 100%;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-section {
+  margin: 0 92px;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: 2px;
+  margin-top: 96px;
+}
+
+h4 {
+  margin: 72px 0;
+  color: #868e96;
+  line-height: 2;
+}
+
+.vector-img {
+  position: absolute;
+  top: 65%;
+  right: 50%;
+}
+
+.vector-dot {
+  position: absolute;
+  top: 66%;
+  right: 52%;
+}
