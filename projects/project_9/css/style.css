@@ -1,0 +1,272 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+}
+
+header {
+  background-color: rgb(43, 43, 238);
+}
+
+section {
+  margin-left: 48px;
+}
+
+nav {
+  display: flex;
+  gap: 36px;
+  float: right;
+  color: #fff;
+  margin-right: 24px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.nav-item-active {
+  padding: 6px 12px;
+  background-color: #fff;
+  color: blue;
+  border-radius: 9px;
+}
+
+.logo {
+  margin-top: 24px;
+  margin-left: 48px;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-text {
+  margin: 112px 0 136px 48px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+
+.header-text p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.header-img {
+  position: absolute;
+  right: 0;
+}
+
+.companies {
+  display: flex;
+  gap: 136px;
+  margin-top: 12px;
+}
+
+.company-items {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Righteous";
+  font-size: 24px;
+  color: #000;
+}
+
+.api {
+  margin: 64px 0;
+}
+
+.api-heading {
+  margin: 64px 0;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 44px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.card-active {
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+}
+
+.card-logo {
+  padding-top: 24px;
+}
+
+.card-head-active {
+  color: blue;
+}
+.card-logo,
+.card-head,
+.card-body {
+  padding-left: 24px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+}
+
+.blog-heading {
+  margin: 52px 0;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 48px;
+  gap: 24px;
+}
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border-top-left-radius: 55px;
+}
+
+.blog-content {
+  margin-top: 36px;
+  margin-left: 36px;
+}
+
+.blog-image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+h3 {
+  margin: 18px 0;
+  font-weight: 700;
+}
+
+h6 {
+  color: blue;
+}
+
+.blog-bottom {
+  display: flex;
+  gap: 6px;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.blog-card-bottom-image {
+  transform: translateY(40%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.faq-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 96px;
+  background-color: #edf2ff;
+}
+
+.faq-content {
+  padding: 48px 0;
+  margin-left: 48px;
+}
+
+.faq-content h2 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  margin: 24px 0;
+}
+
+.faq-content button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: rgb(147, 15, 224);
+  border: none;
+  color: #fff;
+}
+
+.faq-image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.download-section {
+  display: flex;
+  margin: 96px 48px;
+  align-items: center;
+}
+
+.download-email {
+  display: flex;
+  margin-left: auto;
+}
+
+input[type="text"] {
+  border-radius: 25px;
+  border: none;
+  background-color: #dbe4ff;
+  padding: 12px 148px;
+}
+
+form button {
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 48px;
+  background-color: rgb(147, 15, 224);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(43, 43, 238);
+  padding: 78px 48px;
+}
+
+.footer-left ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin-top: 24px;
+}
+
+.footer-right-div {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.footer-right ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin-top: 24px;
+  justify-content: center;
+  margin-left: auto;
+}
+
+hr {
+  height: 20px;
+  border: 0.1px solid #fff;
+}
