@@ -1,0 +1,177 @@
+@media (max-width: 70em) {
+  /* 1120/16 = 70 */
+  h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .nav-lists {
+    gap: 22px;
+  }
+
+  .nav-list {
+    font-size: 0.8rem;
+  }
+
+  .hero-section {
+    margin-bottom: 6.4rem;
+  }
+
+  .product-section {
+    margin-bottom: 6.4rem;
+  }
+
+  .offerings-heading h2 {
+    padding: 0 0;
+  }
+
+  .offerings-heading p {
+    padding: 0 24px;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.4rem;
+    margin: 0 4.8rem;
+  }
+
+  .card-imp {
+    height: 11.6rem;
+  }
+
+  .cta-text {
+    padding: 0 2.4;
+    margin-right: 9.8rem;
+  }
+}
+
+@media (max-width: 56em) {
+  /* 900/16 = 56 */
+
+  h2 {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 22px 0;
+  }
+
+  .nav-lists {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .nav-icon {
+    display: inline-block;
+    color: #000;
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-main {
+    padding-right: 2.8rem;
+  }
+}
+
+@media (max-width: 44em) {
+  /* 700/16 = 44 */
+  .hero-section {
+    grid-template-columns: 1fr;
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+
+  .product-section {
+    grid-template-columns: 1fr;
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+  .product-section img {
+    grid-row: 2;
+  }
+
+  .product-img {
+    max-width: 100%;
+  }
+
+  .offerings-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4.8rem 0;
+    gap: 4.8rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    margin: 0 6.8rem;
+  }
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    padding: 0 2.4rem;
+    margin-right: 4.8rem;
+    padding-top: 6.4rem;
+  }
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 4.8rem 0;
+  }
+}
+
+@media (max-width: 32em) {
+  /* 500/16 = 32 */
+
+  body {
+    margin: 0 12px;
+    overflow-x: hidden;
+  }
+
+  .cta-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-text {
+    padding: 0 2.4rem;
+    padding-top: 4.4rem;
+    margin-right: 0;
+  }
+
+  .cta-btn {
+    padding: 1.2rem 1.2rem;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 2fr 1fr;
+    margin: 4.8rem 0;
+  }
+
+  .footer-lists {
+    margin: 2.4rem 0;
+  }
+}
