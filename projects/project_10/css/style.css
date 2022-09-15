@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("../images/background.png");
+  height: 100vh;
+  width: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 48px 48px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.underline {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 36px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 96px;
+  margin-left: auto;
+  font-size: 24px;
+}
+
+.call-us {
+  display: flex;
+  gap: 12px;
+  margin-left: 48px;
+}
+
+.call-us img {
+  stroke: #fff;
+  height: 36px;
+  width: 36px;
+}
+
+.nav-icon {
+  display: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-left {
+  margin: 48px 0;
+}
+
+.hero-heading {
+  font-size: 44px;
+  margin: 64px 0;
+}
+
+.hero-button {
+  border: 2px solid #fff;
+  padding: 24px 48px;
+  border-radius: 48px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  font-size: 24px;
+}
+
+.section-right {
+  position: relative;
+}
+
+.puzzle-box,
+.bulb-box {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.154);
+  position: absolute;
+}
+
+.puzzle-box {
+  right: 0;
+  top: 50px;
+}
+
+.bulb-box {
+  top: 400px;
+}
+
+.puzzle-box img,
+.bulb-box img {
+  height: 48px;
+  width: 76px;
+  margin: 24px 48px;
+  padding: 8px 18px;
+  background-color: #fff;
+  border-radius: 22px;
+}
+
+p.box-text {
+  margin: 0 48px;
+  padding-bottom: 24px;
+}
