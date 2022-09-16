@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  padding: 24px 48px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 4.8rem;
+  color: white;
+  align-items: center;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-left img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-right {
+  margin-top: 12.8rem;
+}
+
+.hello-text {
+  color: red;
+  font-size: 2.4rem;
+}
+
+.heading-text {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.description {
+  color: #fff;
+  font-size: 1rem;
+  margin: 1.6rem 0;
+}
+
+.main-btn {
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+  border: none;
+}
+
+.showcase-container {
+  margin-top: 6.4rem;
+}
+
+.top-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  column-gap: 2.4rem;
+  padding: 0 9.8rem;
+}
+
+.card {
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.363);
+  background-color: rgb(31, 30, 30);
+  padding: 3.2rem 0;
+}
+
+.top-showcase h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 1.2rem 0;
+}
+
+.top-showcase p {
+  font-size: 1.2rem;
+  padding: 0 4.8rem;
+}
+
+.know-more {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.note-icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: red;
+}
+
+.red-card {
+  background-color: rgb(211, 42, 42);
+}
+
+.red-card a {
+  color: #fff;
+}
+
+.bottom-showcase {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2.4rem;
+  padding: 0 9.8rem;
+  margin: 6.4rem 0;
+}
+
+.first-item {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-years {
+  font-size: 7.8rem;
+  color: rgb(211, 42, 42);
+}
+
+.experience-title {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+  text-align: center;
+}
+
+.count {
+  font-size: 4.2rem;
+  color: rgb(211, 42, 42);
+}
+
+/* PROJECTS CONTAINER */
+
+.projects-container {
+  padding: 0 9.8rem;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-top-left h2 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+
+.project-img-container {
+  padding: 4.8rem 2.4rem;
+}
+
+.project-img-container img {
+  max-width: 100%;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 1.2rem 0;
+}
+
+/* LETSWORK CONTAINER */
+
+.letswork-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 2.4rem;
+  align-items: center;
+  margin: 4.8rem 0;
+}
+
+.work-title {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.footer-links {
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
