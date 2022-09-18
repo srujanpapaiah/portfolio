@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopify Clone</title>
+  </head>
+  <body>
+    <nav
+      class="flex bg-[#012D2D] items-center justify-between px-10 py-5 lg:pb-20"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 608 173.7"
+        class="h-8"
+      >
+        <path
+          fill="#95BF47"
+          d="M130.7 32.9c-.1-.9-.9-1.3-1.5-1.4-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8-2.9-.7-3.7-.5c0 0-1.9.6-5.1 1.6-.5-1.7-1.3-3.8-2.4-5.9-3.6-6.9-8.8-10.5-15.2-10.5-.4 0-.9 0-1.3.1-.2-.2-.4-.4-.6-.7-2.8-3-6.3-4.4-10.5-4.3-8.2.2-16.3 6.1-23 16.7-4.7 7.4-8.2 16.7-9.2 23.9-9.4 2.9-16 4.9-16.1 5-4.7 1.5-4.9 1.6-5.5 6.1C12.4 55.3 0 151.4 0 151.4l104.1 18 45.1-11.2S130.8 33.7 130.7 32.9zm-39.2-9.7c-2.4.7-5.1 1.6-8.1 2.5-.1-4.1-.6-9.9-2.5-14.9 6.3 1.2 9.3 8.2 10.6 12.4zM78 27.4c-5.5 1.7-11.4 3.5-17.4 5.4 1.7-6.4 4.9-12.8 8.8-17 1.5-1.6 3.5-3.3 5.9-4.3 2.3 4.7 2.7 11.4 2.7 15.9zM66.8 5.8c1.9 0 3.5.4 4.9 1.3-2.2 1.1-4.4 2.8-6.4 5-5.2 5.6-9.2 14.2-10.8 22.6-5 1.5-9.8 3-14.3 4.4 3-13.2 14-32.9 26.6-33.3z"
+        />
+        <path
+          fill="#5E8E3E"
+          d="M129.2 31.5c-.6-.1-12.6-.2-12.6-.2s-10.1-9.8-11.1-10.8c-.4-.4-.9-.6-1.4-.6v149.5l45.1-11.2S130.8 33.8 130.7 32.9c-.2-.9-.9-1.3-1.5-1.4z"
+        />
+        <path
+          fill="#FFF"
+          d="M79.1 54.7l-5.2 19.6s-5.8-2.7-12.8-2.2c-10.2.6-10.3 7-10.2 8.7.6 8.8 23.6 10.7 24.9 31.2 1 16.2-8.6 27.2-22.4 28.1-16.6 1-25.7-8.7-25.7-8.7l3.5-14.9s9.2 6.9 16.5 6.5c4.8-.3 6.5-4.2 6.3-7-.7-11.4-19.5-10.8-20.7-29.5-1-15.8 9.4-31.8 32.3-33.3 9-.8 13.5 1.5 13.5 1.5zM210.3 96.5c-5.2-2.8-7.9-5.2-7.9-8.5 0-4.2 3.7-6.9 9.6-6.9 6.8 0 12.8 2.8 12.8 2.8l4.8-14.6s-4.4-3.4-17.3-3.4c-18 0-30.5 10.3-30.5 24.8 0 8.2 5.8 14.5 13.6 19 6.3 3.6 8.5 6.1 8.5 9.9 0 3.9-3.1 7-9 7-8.7 0-16.9-4.5-16.9-4.5l-5.1 14.6s7.6 5.1 20.3 5.1c18.5 0 31.8-9.1 31.8-25.5.1-8.9-6.6-15.2-14.7-19.8zm73.8-30.8c-9.1 0-16.3 4.3-21.8 10.9l-.3-.1 7.9-41.4h-20.6l-20 105.3h20.6l6.9-36c2.7-13.6 9.7-22 16.3-22 4.6 0 6.4 3.1 6.4 7.6 0 2.8-.3 6.3-.9 9.1l-7.8 41.2h20.6l8.1-42.6c.9-4.5 1.5-9.9 1.5-13.4 0-11.5-6.2-18.6-16.9-18.6zm63.5 0c-24.8 0-41.2 22.4-41.2 47.4 0 16 9.9 28.8 28.4 28.8 24.3 0 40.8-21.8 40.8-47.4-.1-14.7-8.8-28.8-28-28.8zm-10.2 60.4c-7 0-10-6-10-13.4 0-11.8 6.1-31.1 17.3-31.1 7.3 0 9.7 6.3 9.7 12.4 0 12.7-6.1 32.1-17 32.1zm90.8-60.4c-13.9 0-21.8 12.2-21.8 12.2h-.3l1.2-11.1h-18.2c-.9 7.5-2.5 18.8-4.2 27.3l-14.3 75.4h20.6l5.7-30.5h.4s4.2 2.7 12.1 2.7c24.2 0 40-24.8 40-49.9.1-13.7-6.1-26.1-21.2-26.1zm-19.7 60.7c-5.4 0-8.5-3-8.5-3l3.4-19.3c2.4-12.8 9.1-21.4 16.3-21.4 6.3 0 8.2 5.8 8.2 11.4 0 13.3-7.9 32.3-19.4 32.3zm70.4-90.2c-6.6 0-11.8 5.2-11.8 12 0 6.1 3.9 10.3 9.7 10.3h.3c6.4 0 12-4.3 12.1-12 0-6-4-10.3-10.3-10.3zm-28.8 104.2h20.6l14-73h-20.8zm87-73.2h-14.3l.7-3.4c1.2-7 5.4-13.3 12.2-13.3 3.7 0 6.6 1 6.6 1l4-16.1s-3.6-1.8-11.2-1.8c-7.3 0-14.6 2.1-20.2 6.9-7 6-10.3 14.6-12 23.3l-.6 3.4h-9.6l-3 15.5h9.6l-10.9 57.7H509l10.9-57.7h14.2l3-15.5zm49.6.2s-12.9 32.5-18.7 50.2h-.3c-.4-5.7-5.1-50.2-5.1-50.2H541l12.4 67.1c.3 1.5.1 2.4-.4 3.4-2.4 4.6-6.4 9.1-11.2 12.4-3.9 2.8-8.2 4.6-11.7 5.8l5.7 17.5c4.2-.9 12.8-4.3 20.2-11.2 9.4-8.8 18.1-22.4 27-40.9l25.2-54.1h-21.5z"
+        />
+      </svg>
+      <ul class="hidden lg:flex mr-auto ml-4 gap-11 text-white">
+        <li>Start <ion-icon name="chevron-down-outline"></ion-icon></li>
+        <li>Sell <ion-icon name="chevron-down-outline"></ion-icon></li>
+        <li>Market <ion-icon name="chevron-down-outline"></ion-icon></li>
+        <li>Manage <ion-icon name="chevron-down-outline"></ion-icon></li>
+      </ul>
+      <ul class="hidden lg:flex gap-11 text-white items-center">
+        <li>Pricing</li>
+        <li>Learn <ion-icon name="chevron-down-outline"></ion-icon></li>
+        <li>Log in</li>
+        <li class="bg-[#004C3E] text-white py-4 px-4 rounded">
+          Start free trial
+        </li>
+      </ul>
+      <ion-icon
+        name="menu-outline"
+        class="text-white cursor-pointer lg:hidden text-4xl"
+      ></ion-icon>
+    </nav>
+    <main>
+      <section class="md:grid grid-cols-2">
+        <div class="px-8 py-10 bg-[#012D2D] lg:px-24">
+          <!-- <a href="#" class="hidden"
+            >Shopify Editions, Summer ’22 is here | Discover 100+ new features
+          </a> -->
+          <h1 class="text-5xl font-extrabold text-white lg:mt-20">
+            If you can dream it, you can sell it with Shopify
+          </h1>
+          <p class="my-5 text-lg text-white">
+            Build your business here. Take it anywhere.
+          </p>
+          <input
+            type="email"
+            placeholder="Enter your mail address"
+            class="mb-5 mr-3 py-4 px-9 rounded sm:px-20"
+          />
+          <button
+            class="bg-[#004C3E] text-white py-4 px-4 rounded sm:px-6 md:px-28 lg:px-24 xl:px-6"
+          >
+            Start free trail
+          </button>
+
+          <p class="text-white text-sm">
+            Try Shopify free for 14 days, no credit card required. By entering
+            your email, you agree to receive marketing emails from Shopify.
+          </p>
+        </div>
+        <div>
+          <img
+            src="./images/hero-large-f5f7bd926fa6c43a0c97bf1714f7e5227a18bb6952a6599208b2c8b2cab514d4.webp"
+            alt=""
+            class="md:block md:h-[75vh] lg:h-[700px] xl:h-auto shadow-2xl"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h1 class="my-20 text-4xl px-20 lg:pr-96 xl:text-7xl">
+            Discover why millions of entrepreneurs choose Shopify to build their
+            business—from Hello World to IPO.
+          </h1>
+        </div>
+        <div>
+          <img
+            src="./images/app-store-mobile-large-a62b7fe35e25b8cea8f99ad2521ace3a9b22b04e27138df2d99a54353e56fe3f.webp"
+            alt=""
+            class="px-20 md:hidden"
+          />
+          <img
+            src="./images/app-store-tablet-large-d4814d7d2628442fac7e4b8902c11a1c20349a2bd3d3f0bd94551d10e4ae1359.webp"
+            alt=""
+            class="hidden md:block px-20 lg:hidden"
+          />
+          <img
+            src="./images/app-store-desktop-large-6109500f5cb17f988789fa730b4a81142a98135d2ba401c90ce906a8003bbd6f.webp"
+            alt=""
+            class="hidden lg:block px-20"
+          />
+        </div>
+        <div class="lg:grid grid-cols-3 gap-5">
+          <div
+            class="flex flex-col mt-16 mb-10 border-t-2 border-t-black px-20 lg:pl-10"
+          >
+            <h2 class="my-6 text-xl">Store builder</h2>
+            <p>
+              Store builder Bring your vision to life with our easy-to-use store
+              creator. No coding expertise required—just your next big idea.
+            </p>
+            <a href="" class="my-6 font text-[#67A892] font-bold"
+              >Build the brand you want
+              <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+
+          <div
+            class="hidden lg:flex flex-col mt-16 mb-10 border-t-2 border-t-black lg:pr-10"
+          >
+            <h2 class="my-6 text-xl">Themes</h2>
+            <p>
+              Select from hundreds of customizable templates crafted by a
+              community of world-class designers.
+            </p>
+            <a href="" class="my-6 font text-[#67A892] font-bold"
+              >Explore more Themes
+              <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div
+            class="hidden lg:flex flex-col mt-16 mb-10 border-t-2 border-t-black lg:pr-10"
+          >
+            <h2 class="my-6 text-xl">Store builder</h2>
+            <p>
+              Store builder Bring your vision to life with our easy-to-use store
+              creator. No coding expertise required—just your next big idea.
+            </p>
+            <a href="" class="my-6 font text-[#67A892] font-bold"
+              >Build the brand you want
+              <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 mx-10 lg:grid-cols-2">
+        <div>
+          <img
+            src="./images/sell-large-b1d708a1d1b26bb0e8f42fea19b248f453e532f0c552f85603e1f26f783c711c.webp"
+            alt=""
+            class="bg-[#FFF8F6] rounded-lg p-10 lg:flex h-[600px] lg:ml-16"
+          />
+        </div>
+        <div
+          class="md:text-center lg:px-20 px-5 flex flex-col justify-center text-2xl"
+        >
+          <h2 class="my-6 text-xl lg:text-4xl">
+            Connect with customers everywhere
+          </h2>
+          <p class="mb-6">
+            Sell online, in person, or both with the marketing tools, social
+            integrations, and sales channels you need to get your products in
+            front of customers—and out the door.
+          </p>
+          <a href="" class="font text-[#67A892] font-bold"
+            >Marketing made easy
+            <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 mx-10 mt-10 lg:flex flex-row-reverse">
+        <!-- lg:grid-cols-2 -->
+        <div>
+          <img
+            src="./images/manage-large-b73354762084c131bbf3d45a32e40275c1dcf492381a7c334410229715c4e5b5.webp"
+            alt=""
+            class="bg-[#C5F0FB] rounded-lg p-10 lg:grid h-[400px] lg:w-[1600px]"
+          />
+        </div>
+        <div class="md:text-center px-5 flex flex-col justify-center text-2xl">
+          <h2 class="my-6 text-xl lg:text-4xl">
+            Everything you need to succeed
+          </h2>
+          <p class="mb-6">
+            Manage inventory, track payments, and view real-time business
+            insights from a single dashboard. We’ve built all the tools you
+            need, so you can focus on building your business.
+          </p>
+          <a href="" class="my-6 font text-[#67A892] font-bold"
+            >Do more from day one
+            <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-[#F3FCF4] mt-20">
+          <h1
+            class="text-[#004C3E] text-4xl font-bold text-center pt-8 lg:text-6xl lg:mb-[-130px] md:px-44 lg:px-64 lg:pt-20"
+          >
+            Empowering entrepreneurs everywhere
+          </h1>
+          <img src="./images/globe.png" alt="" />
+          <ul
+            class="grid grid-cols-2 gap-y-10 px-6 pb-8 md:grid-cols-4 gap-x-6 lg:px-20 lg:text-center lg:mt-[-130px]"
+          >
+            <li>
+              <h1 class="text-[#004C3E] font-bold text-4xl lg:text-6xl mb-6">
+                Millions
+              </h1>
+              <p>of merchants worldwide</p>
+            </li>
+            <li>
+              <h1 class="text-[#004C3E] font-bold text-4xl lg:text-6xl mb-6">
+                175
+              </h1>
+              <p>countries on Shopify</p>
+            </li>
+            <li>
+              <h1 class="text-[#004C3E] font-bold text-4xl lg:text-6xl mb-6">
+                5M
+              </h1>
+              <p>jobs supported in 2021</p>
+            </li>
+            <li>
+              <h1 class="text-[#004C3E] font-bold text-4xl lg:text-6xl mb-6">
+                $444B+
+              </h1>
+              <p>global economic activity</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 mx-10 mt-10 lg:flex flex-row-reverse">
+        <!-- lg:grid-cols-2 -->
+        <div>
+          <img
+            src="./images/cee-cees-closet-large-c664c590de7cc0da1cd232436cbb7f8fd403106ebb0bd317b00b4ee2a397de3d.webp"
+            alt=""
+            class="rounded-lg p-10 lg:flex h-[600px] lg:ml-16 lg:w-[1600px]"
+          />
+        </div>
+        <div class="2xl:text-center px-5 flex flex-col justify-center text-2xl">
+          <h2 class="my-6">Meet the merchants who chose Shopify</h2>
+          <p class="mb-6 text-xl lg:text-4xl">
+            “We’ve been able to build something in 3 years that a lot of brands
+            haven’t actually gotten to in 10 years.”
+          </p>
+          <a href="" class="my-6">Chioma | Co-Founder & CEO </a>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 mx-10 lg:grid-cols-2 mb-20">
+        <div>
+          <img
+            src="./images/editions-large-8c5edf8a36e7580131901fc99fc46c5d9729311e9a764c201cc7ce5f3df2db61.gif"
+            alt=""
+            class="rounded-lg p-10 lg:grid h-[400px] lg:w-[1600px]"
+          />
+        </div>
+        <div
+          class="2xl:text-center lg:px-20 px-5 flex flex-col justify-center text-2xl"
+        >
+          <h2 class="my-6 text-xl lg:text-4xl font-bold">Shopify Editions</h2>
+          <p class="mb-6">
+            Welcome to Shopify Editions, where twice a year we pull back the
+            curtain and show you the hundreds of updates we’re making as we go
+            all-in on the Connect to Consumer era of business.
+          </p>
+          <a href="" class="font text-[#67A892]"
+            >Take a peek <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 lg:flex flex-row-reverse">
+        <div>
+          <img
+            src="./images/help-mobile-large-9344bd7fd14be35cf7535c14c65f976f400737ac6367c2a2f8f8e2754323751d.webp"
+            alt=""
+            class="lg:w-[50vw] lg:h-[100vh]"
+          />
+        </div>
+        <div class="bg-[#FAF7ED] lg:w-[50vw]">
+          <h1 class="text-[#202326] pt-20 pb-10 font-bold text-5xl text-center">
+            The help you need, when you need it
+          </h1>
+          <ul class="grid grid-cols-2 gap-6 px-8 lg:ml-10">
+            <li>
+              <h3 class="text-[#202326] mb-6 text-xl font-semibold">
+                Shopify Blog
+              </h3>
+              <p class="text-[#6B7176] mb-6">
+                Get all the marketing and business strategy tips you need to
+                help you run an online business.
+              </p>
+              <a href="" class="text-[#008060] font-semibold">Read</a>
+            </li>
+            <li>
+              <h3 class="text-[#202326] mb-6 text-xl font-semibold">
+                Online Courses
+              </h3>
+              <p class="text-[#6B7176] mb-6">
+                Learn from the best with instant access to lessons from
+                successful entrepreneurs around the world.
+              </p>
+              <a href="" class="text-[#008060] font-semibold">Learn</a>
+            </li>
+            <li>
+              <h3 class="text-[#202326] mb-6 text-xl font-semibold">
+                Our Community
+              </h3>
+              <p class="text-[#6B7176] mb-6">
+                Connect with a community of brands, partners, and fellow
+                merchants who understand Shopify.
+              </p>
+              <a href="" class="text-[#008060] font-semibold">Connect</a>
+            </li>
+            <li>
+              <h3 class="text-[#202326] mb-6 text-xl font-semibold">
+                Help Center
+              </h3>
+              <p class="text-[#6B7176] mb-6">
+                Find answers in a flash with your dedicated resource for
+                articles and videos from our Support team.
+              </p>
+              <a href="" class="text-[#008060] font-semibold">Get Help</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="text-center m-24">
+        <h1 class="text-[#202326] text-4xl font-bold my-6">
+          Grow your business here
+        </h1>
+        <p class="text-[#6B7176] text-xl mb-6">
+          Whether you want to sell products down the street or around the world,
+          we have all the tools you need.
+        </p>
+        <button
+          class="text-white py-4 px-8 bg-[#008060] rounded shadow-lg font-bold"
+        >
+          Start free trial
+        </button>
+      </section>
+    </main>
+    <footer class="bg-[#004C3F]">
+      <ul
+        class="text-white font-bold grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 text-center py-6"
+      >
+        <li>About</li>
+        <li>Careers</li>
+        <li>Press and Media</li>
+        <li>Shopify Plus</li>
+        <li>Sitemap</li>
+      </ul>
+
+      <hr class="text-white mx-6" />
+      <div
+        class="grid grid-cols-2 my-6 mx-6 gap-5 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <ul class="text-white text-sm">
+          <h3 class="font-bold mb-3">ONLINE STORE</h3>
+          <li>Sell Online</li>
+          <li>Features</li>
+          <li>Example</li>
+          <li>Website builder</li>
+        </ul>
+        <ul class="text-white text-sm">
+          <h3 class="font-bold mb-3">POINT OF SALE</h3>
+          <li>Point of sale</li>
+          <li>Features</li>
+          <li>Hardware</li>
+        </ul>
+        <ul class="text-white text-sm">
+          <h3 class="font-bold mb-3">SUPPORT</h3>
+          <li>24/7 Support</li>
+          <li>Shopify Help Center</li>
+          <li>Shopify Community</li>
+          <li>API documentation</li>
+        </ul>
+        <ul class="text-white text-sm">
+          <h3 class="font-bold mb-3">SHOPIFY</h3>
+          <li>Contact</li>
+          <li>Partner Program</li>
+          <li>Affiliate Program</li>
+          <li>App developers</li>
+        </ul>
+      </div>
+      <hr class="text-white mx-6" />
+      <div class="grid grid-cols-1 text-white md:grid-cols-2">
+        <div class="flex gap-3 justify-center mt-4 text-xl">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </div>
+        <div>
+          <ul class="flex gap-3 text-white justify-center my-4">
+            <li>Terms of Service</li>
+            <li>Privacy Policy <ion-icon name="globe-outline"></ion-icon></li>
+            <li>India <ion-icon name="caret-down-outline"></ion-icon></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
