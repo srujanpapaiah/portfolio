@@ -70,8 +70,8 @@ nav {
 .srujan-img {
   position: absolute;
   left: 20px;
-  top: 20px;
-  height: 500px;
+  top: -220px;
+  height: auto;
   width: 500px;
   border-radius: 20px;
 }
