@@ -17,12 +17,22 @@ body {
   color: white;
 }
 
+.bright {
+  color: white;
+}
+
+.mode {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   height: 20vh;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .nav-logo {
@@ -35,15 +45,24 @@ nav {
   display: flex;
   list-style: none;
   gap: 50px;
-}
-
-.nav-item {
   cursor: pointer;
+  align-items: center;
+  margin-right: 25px;
 }
 
-.nav-anchors {
+.nav-anchors:link,
+.nav-anchors:visited {
   text-decoration: none;
-  cursor: pointer;
+  color: #0000ed;
+}
+
+.nav-anchors:hover,
+.nav-anchors:active {
+  text-decoration: none;
+  color: #0000ed;
+  background-color: rgb(185, 206, 224);
+  padding: 10px 5px;
+  border-radius: 10px;
 }
 
 .w-6.h-6 {
@@ -79,7 +98,11 @@ nav {
 }
 
 .col-2 {
+  display: flex;
   flex: 1;
+  align-items: center;
+  top: -100px;
+  z-index: -1;
 }
 
 .intro-text {
@@ -87,9 +110,6 @@ nav {
 }
 
 .srujan-img {
-  position: absolute;
-  left: 20px;
-  top: -250px;
   height: auto;
   width: 500px;
   border-radius: 20px;

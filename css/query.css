@@ -1,2 +1,9 @@
-@media (max-width: 69em) {
+@media (max-width: 53em) {
+  .nav-links {
+    display: none;
+  }
+
+  .col-2 {
+    top: -80px;
+  }
 }
