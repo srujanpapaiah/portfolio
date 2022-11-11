@@ -6,4 +6,16 @@
   .col-2 {
     top: -80px;
   }
+
+  .btn--mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 46em) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

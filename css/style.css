@@ -26,6 +26,23 @@ body {
   width: 1.5rem;
 }
 
+.btn--mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon--mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #333;
+}
+
+.icon--mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -116,7 +133,12 @@ nav {
 }
 
 footer {
-  text-align: center;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  justify-content: center;
 }
 
 .hidden {

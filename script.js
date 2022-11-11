@@ -15,3 +15,8 @@ document.querySelector(".bright").addEventListener("click", () => {
   document.querySelector(".nav-anchors").classList.toggle("white-text");
   document.querySelector(".intro-text").classList.toggle("white-text");
 });
+
+const hire = document.querySelector(".hire-button").textContent.toUpperCase();
+document.querySelector(".hire-button").textContent = hire;
+document.querySelector(".hire-button").style.color = "white";
+document.querySelector(".hire-button").style.fontWeight = "900";
