@@ -10,12 +10,19 @@ body {
   background-color: #18191a;
 }
 
+.white {
+  background-color: #ffffff;
+}
+.white-text {
+  color: white;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   height: 20vh;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-logo {
@@ -30,21 +37,27 @@ nav {
   gap: 50px;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+
 .nav-anchors {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .w-6.h-6 {
-  position: absolute;
   height: 25px;
-  right: 140px;
   cursor: pointer;
 }
 
-.nav-button {
+.hire-button {
   margin-right: 30px;
-  padding: 10px 20px;
+  padding: 20px 80px;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: chocolate;
 }
 
 .container {
@@ -58,6 +71,11 @@ nav {
 
 .col-1 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
 }
 
 .col-2 {
@@ -79,4 +97,8 @@ nav {
 
 footer {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
