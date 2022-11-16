@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/query.css" />
     <title>Projects</title>
     <style>
       * {
@@ -47,7 +63,41 @@
     </style>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div class="logo">
+        <a href="/" class="nav-logo"> Srujan Papaiahgari </a>
+      </div>
+
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="resume.pdf" class="nav-anchors">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="./skills/" class="nav-anchors">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://srujanpapaiahgari.hashnode.dev/" class="nav-anchors"
+            >Blog</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="./projects" class="nav-anchors">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="mailto:srujanpapaiahgari@gmail.com" class="nav-anchors"
+            >Contact</a
+          >
+        </li>
+        <li class="nav-item">
+          <ion-icon name="moon-outline" class="mode dark"></ion-icon>
+          <ion-icon name="sunny-outline" class="mode bright hidden"></ion-icon>
+        </li>
+      </ul>
+      <button class="btn--mobile-nav">
+        <ion-icon class="icon--mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon--mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </nav>
     <div class="container">
       <div>
         <a href="https://srujanpapaiahgari.com/projects/project_1">

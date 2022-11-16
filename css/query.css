@@ -3,10 +3,6 @@
     display: none;
   }
 
-  .col-2 {
-    top: -80px;
-  }
-
   .btn--mobile-nav {
     display: block;
     z-index: 9999;
@@ -17,5 +13,11 @@
   .container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .col-2 {
+    display: grid;
+    justify-content: center;
+    z-index: -1;
   }
 }

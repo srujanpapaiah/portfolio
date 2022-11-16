@@ -144,3 +144,9 @@ footer p {
 .hidden {
   display: none;
 }
+
+.name-decoration {
+  color: rgb(230, 151, 17);
+  font-size: xx-large;
+  font-weight: 200;
+}
