@@ -20,3 +20,17 @@ const hire = document.querySelector(".hire-button").textContent.toUpperCase();
 document.querySelector(".hire-button").textContent = hire;
 document.querySelector(".hire-button").style.color = "white";
 document.querySelector(".hire-button").style.fontWeight = "900";
+
+document.querySelector(".open").addEventListener("click", () => {
+  document.querySelector(".open").classList.add("hidden");
+  document.querySelector(".close").classList.remove("hidden");
+  document.querySelector(".mobile").classList.remove("hidden");
+  document.querySelector("body").classList.add("overflow");
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+  document.querySelector(".open").classList.remove("hidden");
+  document.querySelector(".close").classList.add("hidden");
+  document.querySelector(".mobile").classList.add("hidden");
+  document.querySelector("body").classList.remove("overflow");
+});
