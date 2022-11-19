@@ -87,7 +87,7 @@ nav {
   cursor: pointer;
 }
 
-.hire-button {
+.hireButton {
   margin-right: 30px;
   padding: 20px 80px;
   cursor: pointer;
@@ -132,13 +132,7 @@ nav {
   border-radius: 20px;
 }
 
-footer {
-  position: relative;
-}
-
 footer p {
-  position: absolute;
-  justify-content: center;
 }
 
 .hidden {

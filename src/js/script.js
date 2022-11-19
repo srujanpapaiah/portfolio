@@ -16,10 +16,10 @@ document.querySelector(".bright").addEventListener("click", () => {
   document.querySelector(".intro-text").classList.toggle("white-text");
 });
 
-const hire = document.querySelector(".hire-button").textContent.toUpperCase();
-document.querySelector(".hire-button").textContent = hire;
-document.querySelector(".hire-button").style.color = "white";
-document.querySelector(".hire-button").style.fontWeight = "900";
+const hire = document.querySelector(".hireButton").textContent.toUpperCase();
+document.querySelector(".hireButton").textContent = hire;
+document.querySelector(".hireButton").style.color = "white";
+document.querySelector(".hireButton").style.fontWeight = "900";
 
 document.querySelector(".open").addEventListener("click", () => {
   document.querySelector(".open").classList.add("hidden");
@@ -34,3 +34,5 @@ document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".mobile").classList.add("hidden");
   document.querySelector("body").classList.remove("overflow");
 });
+
+export default js;
