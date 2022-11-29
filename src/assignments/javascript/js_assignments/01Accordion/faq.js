@@ -18,19 +18,11 @@ const faqData = [
   },
 ];
 
-const accordianBody;
+// const accordianBody;
 const faqs = [];
 
-function showFaq() {
-  
-}
+function showFaq() {}
 
-function createFaq() {
-  
-}
+function createFaq() {}
 
-function btnStatusUpdate() {
-  
-}
-
-
+function btnStatusUpdate() {}
