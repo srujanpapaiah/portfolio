@@ -18,111 +18,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/query.css" />
+    <link rel="stylesheet" href="../../src/css/style.css" />
+    <link rel="stylesheet" href="../../src/css/query.css" />
     <title>Projects</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-        margin: 32px 32px;
-      }
-      .container div {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        cursor: pointer;
-      }
-      .container h1 {
-        display: flex;
-        justify-content: center;
-        margin: 12px 0;
-        font-size: 24px;
-        text-decoration: none;
-      }
-      img {
-        max-width: 100%;
-        height: 250px;
-        border-radius: 10px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-      }
-      a:visited,
-      a:link {
-        text-decoration: none;
-        color: #555;
-      }
-      a:hover,
-      a:active {
-        color: #000;
-      }
-    </style>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="/" class="nav-logo"> Srujan Papaiahgari </a>
-      </div>
-
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a href="resume.pdf" class="nav-anchors">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a href="./skills/" class="nav-anchors">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://srujanpapaiahgari.hashnode.dev/" class="nav-anchors"
-            >Blog</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="./projects" class="nav-anchors">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="mailto:srujanpapaiahgari@gmail.com" class="nav-anchors"
-            >Contact</a
-          >
-        </li>
-        <li class="nav-item">
-          <ion-icon name="moon-outline" class="mode dark"></ion-icon>
-          <ion-icon name="sunny-outline" class="mode bright hidden"></ion-icon>
-        </li>
-      </ul>
-      <button class="btn--mobile-nav">
-        <ion-icon class="icon--mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon--mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </nav>
-    <div class="container">
-      <div>
-        <a href="https://srujanpapaiahgari.com/projects/project_1">
-          <img src="../assets/project_1.png" alt="" />
-          <h1>Project 1</h1>
-        </a>
-      </div>
-      <div>
-        <a href="https://srujanpapaiahgari.com/projects/project_2">
-          <img src="../assets/project_2.png" alt="" />
-          <h1>Project 2</h1>
-        </a>
-      </div>
-      <div>
-        <a href="https://srujanpapaiahgari.com/projects/project_3">
-          <img src="../assets/project_3.png" alt="" />
-          <h1>Project 3</h1>
-        </a>
-      </div>
-      <div>
-        <a href="https://srujanpapaiahgari.com/projects/project_4">
-          <img src="../assets/project_4.png" alt="" />
-          <h1>Project 4</h1>
-        </a>
-      </div>
-    </div>
+    <div id="project"></div>
   </body>
 </html>
