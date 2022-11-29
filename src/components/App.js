@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/style.css";
-import "./css/query.css";
+import "../css/style.css";
+import "../css/query.css";
 import Navbar from "./Navbar.js";
 import Footer from "./Footer.js";
-import srujan from "./assets/img-ii.png";
+import srujan from "../assets/img-ii.png";
 
 const App = () => {
   return (
