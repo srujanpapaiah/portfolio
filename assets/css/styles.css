@@ -1260,7 +1260,7 @@ img {
   .project__container {
     background-color: var(--first-color-second);
     border-radius: 1rem;
-    padding: 3rem 2.5rem 0;
+    padding: 3rem 2.5rem 3rem;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
@@ -1335,6 +1335,15 @@ img {
   }
   .container {
     max-width: 1024px;
+  }
+
+  .home__title {
+    margin-bottom: var(--mb-1);
+    margin-top: 0.5rem;
+  }
+  .home__description,
+  .home__subtitle {
+    margin-bottom: var(--mb-2-5);
   }
 
   .services__container {
