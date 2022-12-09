@@ -130,3 +130,11 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 /*==================== SHOW SCROLL UP ====================*/
 
 /*==================== DARK LIGHT THEME ====================*/
+
+/*==================== FOOTER YEAR ====================*/
+const year = function () {
+  const now = new Date();
+  return now.getFullYear();
+};
+
+document.querySelector(".year").textContent = year();
