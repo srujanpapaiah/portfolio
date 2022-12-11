@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <title>HTML | CSS Projects</title>
+  </head>
+  <body>
+    <style>
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-content: space-between;
+      }
+      .project {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .btns {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        text-decoration: none;
+        background-color: aquamarine;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        color: brown;
+      }
+      @media screen and (max-width: 768px) {
+        .projects-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 420px) {
+        .projects-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="../../" class="nav__logo">Srujan Papaiahgari</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="../../" class="nav__link active__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../../#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../../#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../../#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../../#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://srujanpapaiahgari.hashnode.dev/"
+                class="nav__link"
+                target="_blank"
+              >
+                <i class="uil uil-blogger-alt nav__icon"></i> Blog
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../../#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <section class="section projects-container">
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 1</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_1/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_1"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 2</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_2/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_2"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 3</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_3/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_3"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 4</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_4/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_4"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 5</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_5/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_5"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 6</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_6/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_6"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 7</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_7/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_7"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 8</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_8/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_8"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 9</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_9/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_9"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 10</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_10/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_10"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 11</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_11/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_11"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 12</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_12/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_12"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 13</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_13/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_13"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 14</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_14/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_14"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+        <div class="project">
+          <img src="../../assets/img/portfolio1.jpg" alt="" />
+          <h2>Project 15</h2>
+          <div class="btns">
+            <a
+              type="button"
+              href="../../projects/html_css/project_15/"
+              class="btn"
+              >Demo</a
+            >
+            <a
+              type="button"
+              href="https://github.com/srujanpapaiah/portfolio/tree/main/projects/html_css/project_15"
+              class="btn"
+              >Code</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

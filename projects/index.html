@@ -9,22 +9,53 @@
     <title>Projects</title>
   </head>
   <body>
-    <div id="project">
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .btn {
+        padding: 1rem 0.5rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: bisque;
+      }
+    </style>
+    <h1><center>Projects</center></h1>
+    <div id="projects">
       <div class="container">
         <div>
-          <button>HTML & CSS Projects</button>
+          <a href="../projects/html_css/">
+            <button class="btn">HTML & CSS Projects</button>
+          </a>
         </div>
+
         <div>
-          <button>Tailwindcss Projects</button>
+          <a href="../projects/tailwindcss/">
+            <button class="btn">Tailwindcss Projects</button>
+          </a>
         </div>
+
         <div>
-          <button>Reactjs Projects</button>
+          <a href="../projects/reactjs/">
+            <button class="btn">Reactjs Projects</button>
+          </a>
         </div>
+
         <div>
-          <button>Nodejs Projects</button>
+          <a href="../projects/nodejs/">
+            <button class="btn">Nodejs Projects</button>
+          </a>
         </div>
+
         <div>
-          <button>Fullstack Projects</button>
+          <a href="../projects/fullstack/">
+            <button class="btn">Fullstack Projects</button>
+          </a>
         </div>
       </div>
     </div>
